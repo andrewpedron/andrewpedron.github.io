@@ -18,7 +18,7 @@ function process() {
     document.forms["myform"].elements["result"].value = "Please make sure you have entered three inputs and each input is a number.";
   }
   else{
-    document.forms["myform"].elements["result"].value = "The inputted numbers were " + n1 + ", " + n2 + ", " + n3 + "\nThe sum of the integers is " + sum + "\nThe average of the integers is " + avg + "\nThe product of the integers is " + product + "\nThe smallest of the integers is " + min "\nThe largest of the integers is " + max;
+    document.forms["myform"].elements["result"].value = "The inputted numbers were " + n1 + ", " + n2 + ", " + n3 + "\nThe sum of the integers is " + sum + "\nThe average of the integers is " + avg + "\nThe product of the integers is " + product + "\nThe smallest of the integers is " + min + "\nThe largest of the integers is " + max;
   }
 };
 
@@ -93,7 +93,5 @@ function process2() {
 $(document).ready(function(){
   $("fade").click(function(){
     $("#div1").fadeTo("slow", 0.15);
-    $("#div2").fadeTo("slow", 0.4);
-    $("#div3").fadeTo("slow", 0.7);
   });
 });
