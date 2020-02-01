@@ -92,6 +92,6 @@ function process2() {
 
 $(document).ready(function(){
   $("fadeButton").click(function(){
-    $("#div1").fadeTo("slow", 0.15);
+    $("div1").fadeTo("slow", 0.15);
   });
 });
