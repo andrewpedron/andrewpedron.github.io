@@ -95,6 +95,6 @@ $(document).ready(function(){
     $("#textFade").fadeTo("slow", 0);
   });
   $("#reset").click(function(){
-    $("#textFadeIn").fadeIn("slow", 0);
+    $("#textFade").fadeIn("slow", 0);
   });
 });
