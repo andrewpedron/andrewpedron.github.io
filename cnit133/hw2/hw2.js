@@ -91,10 +91,10 @@ function process2() {
 };
 
 $(document).ready(function(){
-  $("#fadeResults").click(function(){
+  $("#fadeOut").click(function(){
     $("#textFade").fadeOut();
   });
-  $("#reset").click(function(){
+  $("#fadeIn").click(function(){
     $("#textFade").fadeIn();
   });
 });
