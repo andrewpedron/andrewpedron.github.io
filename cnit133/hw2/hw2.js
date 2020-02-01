@@ -10,7 +10,7 @@ function process() {
   n2 = parseInt(number2);
   n3 = parseInt(number3);
   sum = n1 + n2 + n3;
-  avg = (n1 + n2 + n3)/3;
+  avg = ((n1 + n2 + n3)/3).toFixed(2);
   product = n1 * n2 * n3;
   min = Math.min(n1,n2,n3);
   max = Math.max(n1,n2,n3);
