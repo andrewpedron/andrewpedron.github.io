@@ -5,7 +5,7 @@
 <head>
   <title>CNIT 133 Homework 2: Extra Credit</title>
   <meta charset="utf-8">
-  <meta name="description" content="CNIT 133 Homework 2: Part #1">
+  <meta name="description" content="CNIT 133 Homework 2: Extra Credit">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -14,78 +14,75 @@
     html {
       scroll-behavior: smooth;
     }
+    input {
+      text-align: left;
+    }
+
+    .body {
+      width: 550px;
+      margin: 0px auto;
+    }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://andrewpedron.github.io/cnit133/hw2/hw2.js" defer></script>
 </head>
 <!-- Head -->
 
-<!-- Body -->
-
 <body>
-
-<!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
     <div class="container">
-      <a class="navbar-brand" href="#">Andrew Pedron</a>
+      <a class="navbar-brand" href="https://andrewpedron.github.io/cnit133/index.html">Main Page</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#scroll-target">See Assignment</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw2/hw2.html">Assignment Homepage<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Parts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part1.html">Part #1</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part2.html">Part #2</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part3.html">Part #3</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_extra_credit.html">Extra Credit</a>
+            </div>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-<!-- Full Page Image Header with Vertically Centered Content -->
-  <header class="masthead">
-    <div class="container h-100">
-      <div class="row h-100 align-items-center">
-        <div class="col-12 text-center">
-          <h1 class="font-weight-light">CNIT 133 Homework 2: Extra Credit</h1>
-          <p class="lead">Welcome to Andrew Pedron's page for CNIT 133 Homework 2: Part #3! <b>To see the submission, scroll down.</b></p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-<!-- Page Content -->
-  <section class="py-4" id="scroll-target">
-    <div class="container">
-      <h2 class="font-weight-normal">Homework 2: Part #3</h2>
-      <p></p>
-    </div>
-  </section>
-
-<!-- Assignment Content -->
   <div class="container">
     <div class="row">
+      <br></br>
+    </div>
+    <div class="row">
       <div class="col-sm-4">
-        <h3 class="font-weight-light">Part #3</h3>
-        <p class="alert alert-info"><b>Description:</b> Pairs of characters</p>
         <div>
-          <a href="https://andrewpedron.github.io/cnit133/hw2.html" class="btn btn-outline-info" role="button" aria-pressed="true">Link</a>
-          <a href="#" class="btn btn-success disabled" role="button" aria-pressed="true">Complete</a>
+          <h2 class="font-weight-normal">Homework 2: Extra Credit</h2>
+        </div>
+        <div>
+          <form name="myform" action="/action_page.php" class="was-validated">
+              <div class="form-group">
+                <label for="num1">First number:</label>
+                <input type="text" name="num1" class="form-control" placeholder="Enter number" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 
-
-<!-- Footer Content -->
-  <footer>
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://www.linkedin.com/in/andrew-pedron/">Andrew Pedron</a>
-    </div>
-  </footer>
-
 </body>
 
-<!-- Body -->
 
 </html>
