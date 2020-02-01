@@ -91,7 +91,7 @@ function process2() {
 };
 
 $(document).ready(function(){
-  $("fadeButton").click(function(){
+  $("button").click(function(){
     $("div1").fadeTo("slow", 0.15);
   });
 });
