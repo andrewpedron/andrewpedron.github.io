@@ -94,4 +94,7 @@ $(document).ready(function(){
   $("#fadeResults").click(function(){
     $("#textFade").fadeTo("slow", 0);
   });
+  $("#reset").click(function(){
+    $("#textFadeIn").fadeIn("slow", 0);
+  });
 });
