@@ -1,6 +1,6 @@
 
 function process() {
-  var number1, number2, n1, n2, sum;
+  var number1, number2, n1, n2, sum, avg, product, min, max;
 
   number1 = document.forms["myform"].elements["num1"].value;
   number2 = document.forms["myform"].elements["num2"].value;
@@ -12,11 +12,13 @@ function process() {
   sum = n1 + n2 + n3;
   avg = (n1 + n2 + n3)/3;
   product = n1 * n2 * n3;
+  min = Math.min(n1,n2,n3);
+  max = Math.max(n1,n2,n3);
   if(isNaN(sum)){
     document.forms["myform"].elements["result"].value = "Please make sure you have entered three inputs and each input is a number.";
   }
   else{
-    document.forms["myform"].elements["result"].value = "The inputted numbers were " + n1 + ", " + n2 + ", " + n3 + "\nThe sum of the integers is " + sum + "\nThe average of the integers is " + avg + "\nThe product of the integers is " + product;
+    document.forms["myform"].elements["result"].value = "The inputted numbers were " + n1 + ", " + n2 + ", " + n3 + "\nThe sum of the integers is " + sum + "\nThe average of the integers is " + avg + "\nThe product of the integers is " + product + "\nThe smallest of the integers is " + min "\nThe largest of the integers is " + max;
   }
 };
 
@@ -87,3 +89,11 @@ function process2() {
     document.forms["myform"].elements["result"].value = negcount + " negative numbers were inputted." + "\n" + zerocount + " zero numbers were inputted. " + "\n" + poscount + " positive numbers were inputted. ";
   }
 };
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeTo("slow", 0.15);
+    $("#div2").fadeTo("slow", 0.4);
+    $("#div3").fadeTo("slow", 0.7);
+  });
+});
