@@ -92,7 +92,7 @@ function process2() {
 
 $(document).ready(function(){
   $("#fadeResults").click(function(){
-    $("#textFade").fadeTo("slow", 0);
+    $("#textFade").fadeOut();
   });
   $("#reset").click(function(){
     $("#textFade").fadeIn();
