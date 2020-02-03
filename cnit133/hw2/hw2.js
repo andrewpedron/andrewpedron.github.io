@@ -90,11 +90,37 @@ function process2() {
   }
 };
 
+function process3() {
+  var number1;
+
+  number1 = document.forms["myform"].elements["num1"].value;
+
+  n1 = parseFloat(number1).toFixed(2);
+
+  document.getElementById("europe").innerHTML = (n1 * 0.89).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + " &euro;";
+  document.getElementById("canada").innerHTML = (n1 * 1.31).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') +" &#36;";
+  document.getElementById("hkg").innerHTML = (n1 * 7.80).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + " &#36;";
+  document.getElementById("japan").innerHTML = (n1 * 108.38).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + " &yen;";
+  document.getElementById("mexico").innerHTML = (n1 * 19.11).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,') + " &#36;";
+};
+
+
 $(document).ready(function(){
+
   $("#fadeOut").click(function(){
     $("#textFade").fadeOut("slow");
   });
+
   $("#fadeIn").click(function(){
     $("#textFade").fadeIn("slow");
   });
+
+  $('#textfield').focus(function() {
+    $(this).css('background-color','#FF6347');
+  });
+
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+  
 });

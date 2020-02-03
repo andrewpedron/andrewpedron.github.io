@@ -47,15 +47,30 @@
   <script>
 
 
-$(document).ready(function() {
+  $(document).ready(function() {
 
-	$('#textfield').focus(function() {
-		$(this).css('background-color','#FF6347');
-	});
+  	$('#textfield').focus(function() {
+  		$(this).css('background-color','#FF6347');
+  	});
 
-  $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
-  });
+    $("#flip").click(function(){
+      $("#panel").slideToggle("slow");
+    });
+
+    function process() {
+      var number1;
+
+      number1 = document.forms["dollarForm"].elements["textfield"].value;
+
+      n1 = (number1).toFixed(2);
+
+      if(isNaN(sum)){
+        document.forms["myform"].elements["result"].value = "Please make sure you have entered three inputs and each input is a number.";
+      }
+      else{
+        document.forms["myform"].elements["result"].value = "The inputted numbers were " + n1 + ", " + n2 + ", " + n3 + "\nThe sum of the integers is " + sum + "\nThe average of the integers is " + avg + "\nThe product of the integers is " + product + "\nThe smallest of the integers is " + min + "\nThe largest of the integers is " + max;
+      }
+    };
 
 
 }); // end ready
@@ -157,7 +172,11 @@ $(document).ready(function() {
           <tr>
             <td>Euro</td>
             <td>0.89</td>
-            <td>tbd</td>
+            <td>
+              <script>
+                  document.write(n1);
+              </script>
+            </td>
           </tr>
           <tr>
             <td>Canadian Dollar</td>
@@ -184,7 +203,7 @@ $(document).ready(function() {
     </div>
     <div class="row">
       <div class="col-sm-4">
-        <form name="myform" action="/action_page.php" class="was-validated">
+        <form name="dollarForm" action="/action_page.php" class="was-validated">
             <div class="form-group">
               <label for="num1">Enter U.S. Dollar Amount:</label>
               <input type="text" name="textfield" id="textfield" class="form-control" required>
