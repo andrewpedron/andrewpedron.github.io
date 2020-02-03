@@ -78,7 +78,7 @@
 
   <div class="container">
     <div class="row">
-      <br></br>
+      <br><br>
     </div>
     <div class="row">
       <div class="col-sm-4">
@@ -124,10 +124,10 @@
       <p>Enter a dollar amount in the table below to see the corresponding foreign exchange values.</p>
     </div>
     <div class="row">
-      <br></br>
+      <br><br>
     </div>
     <div class="container">
-      <table id="rates" class="table">
+      <table id="rates2" class="table">
         <thead>
           <tr>
             <th>Currency</th>
@@ -167,11 +167,12 @@
     <div>
       <form name="myform" action="/action_page.php" class="was-validated">
           <div class="form-group">
-            <label for="num1">First number:</label>
+            <label for="textfield">First number:</label>
             <input type="text" id='textfield' name="num1" class="form-control" placeholder="Enter number" required>
             <div class="valid-feedback"></div>
             <div class="invalid-feedback">Please fill out this field.</div>
           </div>
+          <div>
             <input type="button" class="btn btn-primary" onclick="process3()" value="Submit">
           </div>
       </form>
