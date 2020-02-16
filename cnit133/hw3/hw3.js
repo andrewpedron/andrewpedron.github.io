@@ -26,7 +26,7 @@ function process() {
   else if (avg>=70){
     document.forms["myform"].elements["result"].value = "The student's grade is an C";
   }
-  else (avg>=70){
+  else {
     document.forms["myform"].elements["result"].value = "Student must retake the course";
   }
 };
