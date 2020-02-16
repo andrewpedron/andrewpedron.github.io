@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+  <title>CNIT 133 Homework 2: Part #3</title>
+  <meta charset="utf-8">
+  <meta name="description" content="CNIT 133 Homework 2: Part #3">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    input {
+      text-align: left;
+    }
+
+    .body {
+      width: 550px;
+      margin: 0px auto;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://andrewpedron.github.io/cnit133/hw2/hw2.js" defer></script>
+</head>
+<!-- Head -->
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container">
+      <a class="navbar-brand" href="https://andrewpedron.github.io/cnit133/index.html">Main Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw2/hw2.html">Assignment Homepage<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Parts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part1.html">Part #1</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part2.html">Part #2</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part3.html">Part #3</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_extra_credit.html">Extra Credit</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <br>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div>
+          <h2 class="font-weight-normal">Homework 2: Part #3</h2>
+        </div>
+        <div>
+          <form name="myform" action="/action_page.php" class="was-validated">
+              <div class="form-group">
+                <label for="num1">First number:</label>
+                <input type="text" id="num1" name="num1" class="form-control" placeholder="Enter number" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="num2">Second number:</label>
+                <input type="text" id="num2" name="num2" class="form-control" placeholder="Enter another number" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="num3">Third number:</label>
+                <input type="text" id="num3" name="num3" class="form-control" placeholder="Enter another number" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="num4">Fourth number:</label>
+                <input type="text" id="num4" name="num4" class="form-control" placeholder="Enter another number" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="num5">Fifth number:</label>
+                <input type="text" id="num5" name="num5" class="form-control" placeholder="Enter one last number" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="result">Result:</label>
+                <br>
+                <textarea id="result" rows="4" cols="40" name="result"></textarea>
+                <br><br>
+                <input type="button" class="btn btn-primary" onclick="process2()" value="Submit">
+                <input type="reset" class="btn btn-primary" value="Reset">
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
