@@ -27,41 +27,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="https://andrewpedron.github.io/cnit133/hw3/hw3.js" defer></script>
-  <script>
-
-  function process() {
-    var number1, number2, number3, number4 n1, n2, n3, n4, sum, avg, product, min, max;
-
-    number1 = document.forms["myform"].elements["num1"].value;
-    number2 = document.forms["myform"].elements["num2"].value;
-    number3 = document.forms["myform"].elements["num3"].value;
-    number4 = document.forms["myform"].elements["num4"].value;
-
-
-    hwAvg = parseInt(number1);
-    midExam = parseInt(number2);
-    finalExam = parseInt(number3);
-    participation = parseInt(number4);
-    sum = hwAvg + midExam + finalExam + participation;
-    avg = ((hwAvg*.5)+(midExam*.2)+(finalExam*.2)+(participation*.1)).toFixed(0);
-    if(isNaN(sum)){
-      document.forms["myform"].elements["result"].value = "Please make sure you have entered four inputs and each input is a number between 0 and 100.";
-    }
-    else if (avg>=90){
-      document.forms["myform"].elements["result"].value = "The student's grade is an A";
-    }
-    else if (avg>=80){
-      document.forms["myform"].elements["result"].value = "The student's grade is an B";
-    }
-    else if (avg>=70){
-      document.forms["myform"].elements["result"].value = "The student's grade is an C";
-    }
-    else {
-      document.forms["myform"].elements["result"].value = "Student must retake the course";
-    }
-  };
-  </script>
-
 </head>
 <!-- Head -->
 
