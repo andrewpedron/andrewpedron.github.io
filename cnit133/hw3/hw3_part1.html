@@ -14,19 +14,23 @@
     html {
       scroll-behavior: smooth;
     }
+    input {
+      text-align: left;
+    }
+
+    .body {
+      width: 550px;
+      margin: 0px auto;
+    }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://andrewpedron.github.io/cnit133/hw3/hw3.js" defer></script>
 </head>
 <!-- Head -->
 
-<!-- Body -->
-
 <body>
-
-<!-- Navigation -->
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
     <div class="container">
       <a class="navbar-brand" href="https://andrewpedron.github.io/cnit133/index.html">Main Page</a>
@@ -43,10 +47,10 @@
               Parts
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part1.html">Part #1</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part2.html">Part #2</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part3.html">Part #3</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_extra_credit.html">Extra Credit</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw3/hw3_part1.html">Part #1</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw3/hw3_part2.html">Part #2</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw3/hw3_part3.html">Part #3</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw3/hw3_part4.html">Extra Credit</a>
             </div>
           </li>
         </ul>
@@ -64,19 +68,41 @@
           <h2 class="font-weight-normal">Homework 3: Part #1</h2>
         </div>
         <div>
-          <script>
-            document.write("<span style = 'color: red; font-family:Times New Roman; font-style:bold'><b>ab</b> </span>");
-            document.write("<span style = 'color: blue; font-family:Arial;'>12 </span>");
-            document.write("<span style = 'color: green; font-family:Impact;font-style:italic'>34</span>");
-          </script>
+          <form name="myform" action="/action_page.php" class="was-validated">
+              <div class="form-group">
+                <label for="num1">First number:</label>
+                <input type="text" id="num1" name="num1" class="form-control" placeholder="Enter number" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="num2">Second number:</label>
+                <input type="text" id="num2" name="num2" class="form-control" placeholder="Enter another number" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="num3">Third number:</label>
+                <input type="text" id="num3" name="num3" class="form-control" placeholder="Enter one last number" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+              </div>
+              <div class="form-group">
+                <label for="textFade">Result:</label>
+                <br>
+                <textarea id="textFade" rows="6" cols="40" name="result"></textarea>
+                <br><br>
+                <input type="button" class="btn btn-primary" onclick="process()" value="Submit">
+                <input type="button" id="fadeOut" class="btn btn-primary" value="Click to Fade Results">
+                <input type="reset" id="fadeIn" class="btn btn-danger" value="Reset">
+              </div>
+          </form>
         </div>
       </div>
     </div>
   </div>
 
-
 </body>
 
-<!-- Body -->
 
 </html>
