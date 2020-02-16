@@ -19,15 +19,15 @@ function process() {
     document.forms["myform"].elements["result"].value = "Please make sure you have entered four inputs and each input is a number between 0 and 100.";
   }
   else if (avg>=90){
-    document.forms["myform"].elements["result"].value = "The student's grade is an A";
+    document.forms["myform"].elements["result"].value = "The student received an A.";
   }
   else if (avg>=80){
-    document.forms["myform"].elements["result"].value = "The student's grade is an B";
+    document.forms["myform"].elements["result"].value = "The student received a B.";
   }
   else if (avg>=70){
-    document.forms["myform"].elements["result"].value = "The student's grade is an C";
+    document.forms["myform"].elements["result"].value = "The student received a C.";
   }
   else {
-    document.forms["myform"].elements["result"].value = "Student must retake the course";
+    document.forms["myform"].elements["result"].value = "Student must retake the course.";
   }
 };
