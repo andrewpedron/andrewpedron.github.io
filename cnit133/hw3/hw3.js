@@ -1,4 +1,3 @@
-
 function process() {
   var number1, number2, number3, number4, hwAvg, midExam, finalExam, participation, sum, avg;
 
@@ -12,10 +11,16 @@ function process() {
   midExam = parseInt(number2);
   finalExam = parseInt(number3);
   participation = parseInt(number4);
-  sum = hwAvg + midExam + finalExam + participation;
+  // sum = hwAvg + midExam + finalExam + participation;
   avg = ((hwAvg*.5)+(midExam*.2)+(finalExam*.2)+(participation*.1)).toFixed(0);
 
-  if(isNaN(sum)){
+  if(isNaN(avg)){
+    document.forms["myform"].elements["result"].value = "Please make sure you have entered four inputs and each input is a number between 0 and 100.";
+  }
+  else if (hwAvg > 100 || midExam > 100 || finalExam > 100 || participation > 100){
+    document.forms["myform"].elements["result"].value = "Please make sure you have entered four inputs and each input is a number between 0 and 100.";
+  }
+  else if (hwAvg < 0 || midExam < 0 || finalExam < 0 || participation < 0){
     document.forms["myform"].elements["result"].value = "Please make sure you have entered four inputs and each input is a number between 0 and 100.";
   }
   else if (avg>=90){
