@@ -101,6 +101,6 @@ function toFahrenheit() {
   number1 = document.forms["myform"].elements["num1"].value;
   fahr = ((number1 * 1.8) + 32).toFixed(0);
 
-  document.forms["myform"].elements["result"].value = number1 + " Celsius = " + celsius + " Fahrenheit.";
+  document.forms["myform"].elements["result"].value = number1 + " Celsius = " + fahr + " Fahrenheit.";
 
 };
