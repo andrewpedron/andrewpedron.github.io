@@ -68,13 +68,13 @@ function process2() {
   sum = (item1_total + item2_total + item3_total + item4_total).toFixed(2);
   earnings = ((sum*.09)+200).toFixed(2);
 
-  document.getElementById("item1").innerHTML = "$" + number1;
+  document.getElementById("item1").innerHTML = number1;
   document.getElementById("total1").innerHTML = "$" + item1_total;
-  document.getElementById("item2").innerHTML = "$" + number2;
+  document.getElementById("item2").innerHTML = number2;
   document.getElementById("total2").innerHTML = "$" + item2_total;
-  document.getElementById("item3").innerHTML = "$" + number3;
+  document.getElementById("item3").innerHTML = number3;
   document.getElementById("total3").innerHTML = "$" + item3_total;
-  document.getElementById("item4").innerHTML = "$" + number4;
+  document.getElementById("item4").innerHTML = number4;
   document.getElementById("total4").innerHTML = "$" + item4_total;
   document.getElementById("total").innerHTML = "$" + sum;
   document.getElementById("weekly").innerHTML = "$" + earnings;
