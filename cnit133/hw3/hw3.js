@@ -35,7 +35,7 @@ function process() {
   else {
     document.forms["myform"].elements["result"].value = "Student must retake the course.";
   }
-}
+};
 
 function buttonActive() {
   var input1, input2, input3, input4;
@@ -50,7 +50,7 @@ function buttonActive() {
   } else {
       document.getElementById('submitA').disabled = true;
     }
-}
+  };
 
 function process2() {
   var number1, number2, number3, number4, item1_total, item2_total, item3_total, item4_total, sum, earnings;
@@ -60,17 +60,12 @@ function process2() {
   number3 = document.forms["myform"].elements["num3"].value;
   number4 = document.forms["myform"].elements["num4"].value;
 
-  if(number1 > 0) {
-              document.getElementById('button').disabled = false;
-          } else {
-              document.getElementById('button').disabled = true;
-          }
 
   item1_total = parseInt(number1)*239.99;
   item2_total = parseInt(number2)*129.75;
   item3_total = parseInt(number3)*99.95;
   item4_total = parseInt(number4)*350.89;
-  sum = item1_total + item2_total + item3_total + item4_total.toFixed(2);
+  sum = (item1_total + item2_total + item3_total + item4_total).toFixed(2);
   earnings = ((sum*.09)+200).toFixed(2);
 
   document.getElementById("item1").innerHTML = "$" + number1;
@@ -84,4 +79,4 @@ function process2() {
   document.getElementById("total").innerHTML = "$" + sum;
   document.getElementById("weekly").innerHTML = "$" + earnings;
 
-}
+};
