@@ -37,6 +37,22 @@ function process() {
   }
 };
 
+function buttonActive() {
+  var input1, input2, input3, input4;
+
+  input1 = document.getElementById("num1").value;
+  input2 = document.getElementById("num2").value;
+  input3 = document.getElementById("num3").value;
+  input4 = document.getElementById("num4").value;
+
+  if(input1 > 0 && input2 > 0 && input3 > 0 && input4 > 0) {
+      document.getElementById('submitA').disabled = false;
+  } else {
+      document.getElementById('submitA').disabled = true;
+    }
+};
+
+
 function process2() {
   var number1, number2, number3, number4, item1_total, item2_total, item3_total, item4_total, sum, earnings;
 
@@ -45,12 +61,12 @@ function process2() {
   number3 = document.forms["myform"].elements["num3"].value;
   number4 = document.forms["myform"].elements["num4"].value;
 
-  // if(number1 > 0) {
-  //             document.getElementById('button').disabled = false;
-  //         } else {
-  //             document.getElementById('button').disabled = true;
-  //         }
-  //     }
+  if(number1 > 0) {
+              document.getElementById('button').disabled = false;
+          } else {
+              document.getElementById('button').disabled = true;
+          }
+      }
 
   item1_total = parseInt(number1)*239.99;
   item2_total = parseInt(number2)*129.75;
@@ -59,16 +75,16 @@ function process2() {
   sum = item1_total + item2_total + item3_total + item4_total.toFixed(2);
   earnings = (sum*.09)+200.toFixed(2);
 
-  document.getElementById("item1").innerHTML = number1;
-  document.getElementById("total1").innerHTML = item1_total;
-  document.getElementById("item2").innerHTML = number2;
-  document.getElementById("total2").innerHTML = item2_total;
-  document.getElementById("item3").innerHTML = number3;
-  document.getElementById("total3").innerHTML = item3_total;
-  document.getElementById("item4").innerHTML = number4;
-  document.getElementById("total4").innerHTML = item4_total;
-  document.getElementById("total").innerHTML = sum;
-  document.getElementById("weekly").innerHTML = earnings;
+  document.getElementById("item1").innerHTML = "$" + number1;
+  document.getElementById("total1").innerHTML = "$" + item1_total;
+  document.getElementById("item2").innerHTML = "$" + number2;
+  document.getElementById("total2").innerHTML = "$" + item2_total;
+  document.getElementById("item3").innerHTML = "$" + number3;
+  document.getElementById("total3").innerHTML = "$" + item3_total;
+  document.getElementById("item4").innerHTML = "$" + number4;
+  document.getElementById("total4").innerHTML = "$" + item4_total;
+  document.getElementById("total").innerHTML = "$" + sum;
+  document.getElementById("weekly").innerHTML = "$" + earnings;
 
 
 };

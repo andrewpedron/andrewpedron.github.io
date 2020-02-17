@@ -5,7 +5,7 @@
 <head>
   <title>CNIT 133 Homework 3: Part #2</title>
   <meta charset="utf-8">
-  <meta name="description" content="CNIT 133 Homework 3: Part #2">
+  <meta name="description" content="CNIT 133 Homework 2: Extra Credit">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -43,7 +43,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://andrewpedron.github.io/cnit133/hw2/hw2.js" defer></script>
+  <script src="https://andrewpedron.github.io/cnit133/hw3/hw3.js" defer></script>
 
 </head>
 <!-- Head -->
@@ -58,123 +58,124 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw2/hw2.html">Assignment Homepage<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw3/hw3.html">Assignment Homepage<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Parts
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part1.html">Part #1</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part2.html">Part #2</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_part3.html">Part #3</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw2/hw2_extra_credit.html">Extra Credit</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw3/hw3_part1.html">Part #1</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw3/hw3_part2.html">Part #2</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw3/hw3_part3.html">Part #3</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw3/hw3_part4.html">Extra Credit</a>
             </div>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-
   <div class="container">
     <div class="row">
       <br><br>
     </div>
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-sm-10">
         <div>
-          <h2 class="font-weight-normal">Extra Credit</h2>
+          <h2 class="font-weight-normal">Items Sold by Salesperson </h2>
         </div>
       </div>
-    </div>
-    <div id="flip">Click here exchange rates and instructions</div>
-    <div id="panel" class="container">
-      <h3 class="font-weight-normal">Monetary Exchange Rates</h3>
-      <p>The exchange rates for 1 U.S. dollar in July 2019 were:</p>
-      <table id="rates" class="table">
-        <thead>
-          <tr>
-            <th>Currency</th>
-            <th>Rate</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Euro</td>
-            <td>0.89</td>
-          </tr>
-          <tr>
-            <td>Canadian Dollar</td>
-            <td>1.31</td>
-          </tr>
-          <tr>
-            <td>Hong Kong Dollar</td>
-            <td>7.80</td>
-          </tr>
-          <tr>
-            <td>Japanese Yen</td>
-            <td>108.38</td>
-          </tr>
-          <tr>
-            <td>Mexican Peso</td>
-            <td>19.11</td>
-          </tr>
-        </tbody>
-      </table>
-      <p>Enter a dollar amount in the table below to see the corresponding foreign exchange values.</p>
     </div>
     <div class="row">
       <br><br>
     </div>
+    <div>
+      <form name="myform" action="/action_page.php" class="was-validated">
+          <div class="form-group">
+            <label for="person">Salesperson:</label>
+            <input type="text" id="person1" name="person1" class="form-control" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please input the salesperson name.</div>
+          </div>
+          <div class="form-group">
+            <label for="num1">Item #1:</label>
+            <input type="number" oninput="buttonActive()" id="num1" min="0" name="num1" class="form-control" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please input the number of items sold.</div>
+          </div>
+          <div class="form-group">
+            <label for="num2">Item #2:</label>
+            <input type="number" oninput="buttonActive()" id="num2" min="0"  name="num2" class="form-control" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please input the number of items sold.</div>
+          </div>
+          <div class="form-group">
+            <label for="num3">Item #3:</label>
+            <input type="number" oninput="buttonActive()" id="num3" min="0"  name="num3" class="form-control" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please input the number of items sold.</div>
+          </div>
+          <div class="form-group">
+            <label for="num4">Item #4:</label>
+            <input type="number" oninput="buttonActive()" id="num4" min="0"  name="num4" class="form-control" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please input the number of items sold.</div>
+          </div>
+          <div class="form-group">
+            <input type="button" id='submitA' class="btn btn-primary" onclick="process2()" value="Submit">
+            <input type="reset" class="btn btn-danger" value="Reset">
+          </div>
+      </form>
+    </div>
     <div class="container">
-      <table id="rates2" class="table">
+      <table id="rates" class="table">
         <thead>
           <tr>
-            <th>Currency</th>
-            <th>Rate</th>
-            <th>Value</th>
+            <th>Item #</th>
+            <th>Price</th>
+            <th>Numbers Sold</th>
+            <th>Total</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Euro</td>
-            <td>0.89</td>
-            <td id='europe'>&euro;</td>
+            <td>1</td>
+            <td>$239.99</td>
+            <td id='item1'></td>
+            <td id='total1'></td>
           </tr>
           <tr>
-            <td>Canadian Dollar</td>
-            <td>1.31</td>
-            <td id='canada'>&#36;</td>
+            <td>2</td>
+            <td>$129.75</td>
+            <td id='item2'></td>
+            <td id='total2'></td>
           </tr>
           <tr>
-            <td>Hong Kong Dollar</td>
-            <td>7.80</td>
-            <td id='hkg'>&#36;</td>
+            <td>3</td>
+            <td>$99.95</td>
+            <td id='item3'></td>
+            <td id='total3'></td>
           </tr>
           <tr>
-            <td>Japanese Yen</td>
-            <td>108.38</td>
-            <td id='japan'>&yen;</td>
+            <td>4</td>
+            <td>$350.89</td>
+            <td id='item4'></td>
+            <td id='total4'></td>
           </tr>
           <tr>
-            <td>Mexican Peso</td>
-            <td>19.11</td>
-            <td id='mexico'>&#36;</td>
+            <td>Total Amount Sold:</td>
+            <td></td>
+            <td></td>
+            <td id='total'></td>
+          </tr>
+          <tr>
+            <td>Total Weekly Earnings:</td>
+            <td></td>
+            <td></td>
+            <td id='weekly'></td>
           </tr>
         </tbody>
       </table>
-    </div>
-    <div>
-      <form name="myform" action="/action_page.php" class="was-validated">
-          <div class="form-group">
-            <label for="textfield">Enter U.S. Dollar Amount:</label>
-            <input type="text" id='textfield' name="num1" class="form-control" placeholder="Enter number" required>
-            <div class="invalid-feedback">Please fill out this field.</div>
-          </div>
-          <div>
-            <input type="button" class="btn btn-primary" onclick="process3()" value="Submit">
-          </div>
-      </form>
     </div>
   </div>
 
