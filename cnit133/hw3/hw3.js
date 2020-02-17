@@ -35,7 +35,7 @@ function process() {
   else {
     document.forms["myform"].elements["result"].value = "Student must retake the course.";
   }
-};
+}
 
 function buttonActive() {
   var input1, input2, input3, input4;
@@ -50,8 +50,8 @@ function buttonActive() {
   } else {
       document.getElementById('submitA').disabled = true;
     }
-    
-  };
+
+}
 
 
 function process2() {
@@ -87,5 +87,4 @@ function process2() {
   document.getElementById("total").innerHTML = "$" + sum;
   document.getElementById("weekly").innerHTML = "$" + earnings;
 
-
-};
+}
