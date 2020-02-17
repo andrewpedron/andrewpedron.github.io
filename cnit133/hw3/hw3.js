@@ -82,5 +82,5 @@ function process2() {
 };
 
 $(document).ready(function(){
-  $(document).tooltip();
+  $('[data-toggle="tooltip"]').tooltip();
 });
