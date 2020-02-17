@@ -3,16 +3,17 @@
 
 <!-- Head -->
 <head>
-  <title>CNIT 133 Homework 2: Part #2</title>
+  <title>CNIT 133 Homework 3: Part #2</title>
   <meta charset="utf-8">
-  <meta name="description" content="CNIT 133 Homework 2: Part #1">
+  <meta name="description" content="CNIT 133 Homework 3: Part #2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+
     html {
-      scroll-behavior: smooth;
+      scroll-behavior: smoooth;
     }
     input {
       text-align: left;
@@ -22,11 +23,28 @@
       width: 550px;
       margin: 0px auto;
     }
+
+    #flip, #panel {
+      padding: 5px;
+      text-align: center;
+      background-color: #f8f9fa;
+      border: solid 1px #c3c3c3;
+    }
+
+    #panel {
+      padding: 50px;
+      text-align: left;
+      display: none;
+    }
+
+
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="https://andrewpedron.github.io/cnit133/hw2/hw2.js" defer></script>
+
 </head>
 <!-- Head -->
 
@@ -60,45 +78,103 @@
 
   <div class="container">
     <div class="row">
-      <br>
+      <br><br>
     </div>
     <div class="row">
       <div class="col-sm-4">
         <div>
-          <h2 class="font-weight-normal">Homework 2: Part #2</h2>
-        </div>
-        <div>
-          <form name="myform" action="/action_page.php" class="was-validated">
-              <div class="form-group">
-                <label for="num1">First number:</label>
-                <input type="text" id="num1" name="num1" class="form-control" placeholder="Enter number" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please fill out this field.</div>
-              </div>
-              <div class="form-group">
-                <label for="num2">Second number:</label>
-                <input type="text" id="num2" name="num2" class="form-control" placeholder="Enter another number" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please fill out this field.</div>
-              </div>
-              <div class="form-group">
-                <label for="num3">Third number:</label>
-                <input type="text" id="num3" name="num3" class="form-control" placeholder="Enter one last number" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please fill out this field.</div>
-              </div>
-              <div class="form-group">
-                <label for="textFade">Result:</label>
-                <br>
-                <textarea id="textFade" rows="6" cols="40" name="result"></textarea>
-                <br><br>
-                <input type="button" class="btn btn-primary" onclick="process()" value="Submit">
-                <input type="button" id="fadeOut" class="btn btn-primary" value="Click to Fade Results">
-                <input type="reset" id="fadeIn" class="btn btn-danger" value="Reset">
-              </div>
-          </form>
+          <h2 class="font-weight-normal">Extra Credit</h2>
         </div>
       </div>
+    </div>
+    <div id="flip">Click here exchange rates and instructions</div>
+    <div id="panel" class="container">
+      <h3 class="font-weight-normal">Monetary Exchange Rates</h3>
+      <p>The exchange rates for 1 U.S. dollar in July 2019 were:</p>
+      <table id="rates" class="table">
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Euro</td>
+            <td>0.89</td>
+          </tr>
+          <tr>
+            <td>Canadian Dollar</td>
+            <td>1.31</td>
+          </tr>
+          <tr>
+            <td>Hong Kong Dollar</td>
+            <td>7.80</td>
+          </tr>
+          <tr>
+            <td>Japanese Yen</td>
+            <td>108.38</td>
+          </tr>
+          <tr>
+            <td>Mexican Peso</td>
+            <td>19.11</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>Enter a dollar amount in the table below to see the corresponding foreign exchange values.</p>
+    </div>
+    <div class="row">
+      <br><br>
+    </div>
+    <div class="container">
+      <table id="rates2" class="table">
+        <thead>
+          <tr>
+            <th>Currency</th>
+            <th>Rate</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Euro</td>
+            <td>0.89</td>
+            <td id='europe'>&euro;</td>
+          </tr>
+          <tr>
+            <td>Canadian Dollar</td>
+            <td>1.31</td>
+            <td id='canada'>&#36;</td>
+          </tr>
+          <tr>
+            <td>Hong Kong Dollar</td>
+            <td>7.80</td>
+            <td id='hkg'>&#36;</td>
+          </tr>
+          <tr>
+            <td>Japanese Yen</td>
+            <td>108.38</td>
+            <td id='japan'>&yen;</td>
+          </tr>
+          <tr>
+            <td>Mexican Peso</td>
+            <td>19.11</td>
+            <td id='mexico'>&#36;</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <form name="myform" action="/action_page.php" class="was-validated">
+          <div class="form-group">
+            <label for="textfield">Enter U.S. Dollar Amount:</label>
+            <input type="text" id='textfield' name="num1" class="form-control" placeholder="Enter number" required>
+            <div class="invalid-feedback">Please fill out this field.</div>
+          </div>
+          <div>
+            <input type="button" class="btn btn-primary" onclick="process3()" value="Submit">
+          </div>
+      </form>
     </div>
   </div>
 
