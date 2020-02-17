@@ -77,6 +77,6 @@ function process2() {
   document.getElementById("item4").innerHTML = "$" + number4;
   document.getElementById("total4").innerHTML = "$" + item4_total;
   document.getElementById("total").innerHTML = "$" + sum;
-  document.getElementById("weekly").innerHTML = "$" + earnings.replace(/\d(?=(\d{3})+\.)/g;
+  document.getElementById("weekly").innerHTML = "$" + earnings.replace(/\d(?=(\d{3})+\.)/g, '$&,';
 
 };
