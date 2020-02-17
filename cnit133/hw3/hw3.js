@@ -50,6 +50,7 @@ function buttonActive() {
   } else {
       document.getElementById('submitA').disabled = true;
     }
+    
   };
 
 
