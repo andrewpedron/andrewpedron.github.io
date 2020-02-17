@@ -6,3 +6,15 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+input {
+  text-align: left;
+}
+
+.body {
+  width: 550px;
+  margin: 0px auto;
+}
