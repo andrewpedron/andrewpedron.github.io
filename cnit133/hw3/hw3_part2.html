@@ -44,6 +44,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="https://andrewpedron.github.io/cnit133/hw3/hw3.js" defer></script>
+  <script>
+  function buttonActive() {
+    var input1, input2, input3, input4;
+
+    input1 = document.getElementById("num1").value;
+    input2 = document.getElementById("num2").value;
+    input3 = document.getElementById("num3").value;
+    input4 = document.getElementById("num4").value;
+
+    if(input1 > 0 && input2 > 0 && input3 > 0 && input4 > 0) {
+        document.getElementById('submitA').disabled = false;
+    } else {
+        document.getElementById('submitA').disabled = true;
+      }
+    };
+  </script>
 
 </head>
 <!-- Head -->
