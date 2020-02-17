@@ -38,7 +38,7 @@ function process() {
 };
 
 function process2() {
-  var number1, number2, number3, number4;
+  var number1, number2, number3, number4, item1_total, item2_total, item3_total, item4_total, sum, earnings;
 
   number1 = document.forms["myform"].elements["num1"].value;
   number2 = document.forms["myform"].elements["num2"].value;
@@ -56,8 +56,8 @@ function process2() {
   item2_total = parseInt(number2)*129.75;
   item3_total = parseInt(number3)*99.95;
   item4_total = parseInt(number4)*350.89;
-  sum = item1_total + item2_total + item3_total + item4_total
-  earnings = (sum*.09)+200
+  sum = item1_total + item2_total + item3_total + item4_total;
+  earnings = (sum*.09)+200;
 
   document.getElementById("item1").innerHTML = number1;
   document.getElementById("total1").innerHTML = item1_total;
