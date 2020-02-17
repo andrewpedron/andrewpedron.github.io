@@ -17,12 +17,12 @@ function process() {
   if(isNaN(avg)){
     document.forms["myform"].elements["result"].value = "Please make sure you have entered four inputs and each input is a number between 0 and 100.";
   }
-  else if (hwAvg > 100 || midExam > 100 || finalExam > 100 || participation > 100){
+  else if (hwAvg > 100 || midExam > 100 || finalExam > 100 || participation > 100 || hwAvg < 0 || midExam < 0 || finalExam < 0 || participation < 0){
     document.forms["myform"].elements["result"].value = "Please make sure you have entered four inputs and each input is a number between 0 and 100.";
   }
-  else if (hwAvg < 0 || midExam < 0 || finalExam < 0 || participation < 0){
-    document.forms["myform"].elements["result"].value = "Please make sure you have entered four inputs and each input is a number between 0 and 100.";
-  }
+  // else if (hwAvg < 0 || midExam < 0 || finalExam < 0 || participation < 0){
+  //   document.forms["myform"].elements["result"].value = "Please make sure you have entered four inputs and each input is a number between 0 and 100.";
+  // }
   else if (avg>=90){
     document.forms["myform"].elements["result"].value = "The student received an A.";
   }
