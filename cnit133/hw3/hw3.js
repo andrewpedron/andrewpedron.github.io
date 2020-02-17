@@ -67,7 +67,6 @@ function process2() {
           } else {
               document.getElementById('button').disabled = true;
           }
-      }
 
   item1_total = parseInt(number1)*239.99;
   item2_total = parseInt(number2)*129.75;
