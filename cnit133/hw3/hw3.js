@@ -36,3 +36,39 @@ function process() {
     document.forms["myform"].elements["result"].value = "Student must retake the course.";
   }
 };
+
+function process2() {
+  var number1, number2, number3, number4;
+
+  number1 = document.forms["myform"].elements["num1"].value;
+  number2 = document.forms["myform"].elements["num2"].value;
+  number3 = document.forms["myform"].elements["num3"].value;
+  number4 = document.forms["myform"].elements["num4"].value;
+
+  // if(number1 > 0) {
+  //             document.getElementById('button').disabled = false;
+  //         } else {
+  //             document.getElementById('button').disabled = true;
+  //         }
+  //     }
+
+  item1_total = parseInt(number1)*239.99;
+  item2_total = parseInt(number2)*129.75;
+  item3_total = parseInt(number3)*99.95;
+  item4_total = parseInt(number4)*350.89;
+  sum = item1_total + item2_total + item3_total + item4_total
+  earnings = (sum*.09)+200
+
+  document.getElementById("item1").innerHTML = number1;
+  document.getElementById("total1").innerHTML = item1_total;
+  document.getElementById("item2").innerHTML = number2;
+  document.getElementById("total2").innerHTML = item2_total;
+  document.getElementById("item3").innerHTML = number3;
+  document.getElementById("total3").innerHTML = item3_total;
+  document.getElementById("item4").innerHTML = number4;
+  document.getElementById("total4").innerHTML = item4_total;
+  document.getElementById("total").innerHTML = sum;
+  document.getElementById("weekly").innerHTML = earnings;
+
+
+};
