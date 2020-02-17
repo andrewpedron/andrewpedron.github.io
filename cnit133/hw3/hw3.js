@@ -80,3 +80,7 @@ function process2() {
   document.getElementById("weekly").innerHTML = "$" + earnings;
 
 };
+
+$(document).ready(function(){
+  $(document).tooltip();
+});
