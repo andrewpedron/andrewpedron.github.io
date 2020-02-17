@@ -89,7 +89,7 @@ function toCelsius() {
   var number1, celsius;
 
   number1 = document.forms["myform"].elements["num1"].value;
-  celsius = (number1 - 32) / 1.8;
+  celsius = ((number1 - 32) / 1.8).toFixed(0);
 
   document.forms["myform"].elements["result"].value = "Input converted to Celsius is " + celsius + " degrees.";
 
@@ -99,7 +99,7 @@ function toFahrenheit() {
   var number1, fahr;
 
   number1 = document.forms["myform"].elements["num1"].value;
-  fahr = (number1 * 1.8) + 32;
+  fahr = ((number1 * 1.8) + 32).toFised(0);
 
   document.forms["myform"].elements["result"].value = "Input converted to Celsius is " + fahr + " degrees.";
 
