@@ -87,4 +87,4 @@ function process2() {
   document.getElementById("total").innerHTML = "$" + sum;
   document.getElementById("weekly").innerHTML = "$" + earnings;
 
-}
+};
