@@ -74,7 +74,7 @@ function process2() {
   item3_total = parseInt(number3)*99.95;
   item4_total = parseInt(number4)*350.89;
   sum = item1_total + item2_total + item3_total + item4_total.toFixed(2);
-  earnings = ()(sum*.09)+200).toFixed(2);
+  earnings = ((sum*.09)+200).toFixed(2);
 
   document.getElementById("item1").innerHTML = "$" + number1;
   document.getElementById("total1").innerHTML = "$" + item1_total;
