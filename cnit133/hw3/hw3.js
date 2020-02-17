@@ -37,6 +37,7 @@ function process() {
   }
 };
 
+
 function buttonActive() {
   var input1, input2, input3, input4;
 
