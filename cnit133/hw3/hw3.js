@@ -50,7 +50,7 @@ function buttonActive() {
   } else {
       document.getElementById('submitA').disabled = true;
     }
-
+}
 
 function process2() {
   var number1, number2, number3, number4, item1_total, item2_total, item3_total, item4_total, sum, earnings;
