@@ -5,7 +5,7 @@
 <head>
   <title>CNIT 133 Homework 3: Part #4</title>
   <meta charset="utf-8">
-  <meta name="description" content="CNIT 133 Homework 3: Part #4">
+  <meta name="description" content="CNIT 133 Homework 3: Part #2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
   <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/hw3/hw3.css">
@@ -15,10 +15,43 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="https://andrewpedron.github.io/cnit133/hw3/hw3.js" defer></script>
+<!--
+  <script>
+
+    var random1, random2;
+
+
+    function randomGen() {
+
+      random1 = Math.floor(Math.random() * 10);
+      random2 = Math.floor(Math.random() * 10);
+      document.getElementById("num1").innerHTML = "How much is " + random1 + " times " + random2 + "?";
+
+      };
+
+    function checkAnswer() {
+      var input1;
+
+      input1 = document.getElementById("product1").value;
+
+      if(input1 == (random1 * random2)) {
+          document.forms["myform"].elements["result"].value = "Very Good!";
+          randomGen();
+          document.getElementById("product1").value = "";
+
+      } else {
+          document.forms["myform"].elements["result"].value = "No. Please try again.";
+          document.getElementById("product1").value = "";
+        }
+      };
+
+  </script> -->
+
+
 </head>
 <!-- Head -->
 
-<body>
+<body onload="randomGen()">
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
     <div class="container">
       <a class="navbar-brand" href="https://andrewpedron.github.io/cnit133/index.html">Main Page</a>
@@ -45,34 +78,34 @@
       </div>
     </div>
   </nav>
-
   <div class="container">
     <div class="row">
-      <br>
+      <br><br>
+    </div>
+    <div class="row">
+      <div class="col-sm-10">
+        <div>
+          <h2 class="font-weight-normal">Learn Multiplication</h2>
+        </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-sm-4">
-        <div>
-          <h2 class="font-weight-normal">Celsius & Farenheit</h2>
-        </div>
-        <div>
-          <form name="myform" action="/action_page.php" class="was-validated">
-              <div class="form-group">
-                <label for="num1">Enter a number:</label>
-                <input type="number" id="num1" name="num1" class="form-control is-valid" required>
-                <div class="valid-feedback"></div>
-                <div class="invalid-feedback">Please input a number.</div>
-              </div>
-              <div class="form-group">
-                <label for="textFade">Result:</label>
-                <br>
-                <textarea rows="6" cols="40" name="result" disabled></textarea>
-                <br><br>
-                <input type="button" class="btn btn-primary" onclick="toCelsius()" value="&#8457; to &#8451;">
-                <input type="button" class="btn btn-primary" onclick="toFahrenheit()" value="&#8451; to &#8457;">
-              </div>
-          </form>
-        </div>
+        <form name="myform" action="/action_page.php" class="was-validated">
+            <div class="form-group" >
+              <label id="num1" for="num1"></label>
+              <input type="number" id="product1" min="0" name="num1" class="form-control" required>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback"></div>
+              <br>
+              <input type="button" class="btn btn-primary" onclick="checkAnswer()" value="Submit">
+            </div>
+            <div class="form-group">
+              <br>
+              <textarea rows="2" cols="40" name="result" disabled></textarea>
+              <br><br>
+            </div>
+        </form>
       </div>
     </div>
   </div>

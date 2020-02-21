@@ -104,3 +104,31 @@ function toFahrenheit() {
   document.forms["myform"].elements["result"].value = number1 + " Celsius = " + fahr + " Fahrenheit.";
 
 };
+
+var random1, random2;
+
+
+function randomGen() {
+
+  random1 = Math.floor(Math.random() * 10);
+  random2 = Math.floor(Math.random() * 10);
+  document.getElementById("num1").innerHTML = "How much is " + random1 + " times " + random2 + "?";
+
+  };
+
+function checkAnswer() {
+  var input1;
+
+  input1 = document.getElementById("product1").value;
+
+  if(input1 == (random1 * random2)) {
+      document.forms["myform"].elements["result"].value = "Very Good!";
+      randomGen();
+      document.getElementById("product1").value = "";
+
+  } else {
+      document.forms["myform"].elements["result"].value = "No. Please try again.";
+      document.getElementById("product1").value = "";
+    }
+    
+  };
