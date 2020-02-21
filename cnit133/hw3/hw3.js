@@ -35,7 +35,8 @@ function process() {
   else {
     document.forms["myform"].elements["result"].value = "Student must retake the course.";
   }
-};
+
+}
 
 function buttonActive() {
   var input1, input2, input3, input4;
@@ -50,7 +51,8 @@ function buttonActive() {
   } else {
       document.getElementById('submitA').disabled = true;
     }
-  };
+
+}
 
 function process2() {
   var number1, number2, number3, number4, item1_total, item2_total, item3_total, item4_total, sum, earnings;
@@ -79,7 +81,7 @@ function process2() {
   document.getElementById("total").innerHTML = "$" + sum;
   document.getElementById("weekly").innerHTML = "$" + earnings;
 
-};
+}
 
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
@@ -93,7 +95,7 @@ function toCelsius() {
 
   document.forms["myform"].elements["result"].value = number1 + " Fahrenheit = " + celsius + " Celsius.";
 
-};
+}
 
 function toFahrenheit() {
   var number1, fahr;
@@ -103,7 +105,7 @@ function toFahrenheit() {
 
   document.forms["myform"].elements["result"].value = number1 + " Celsius = " + fahr + " Fahrenheit.";
 
-};
+}
 
 var random1, random2;
 
@@ -114,7 +116,7 @@ function randomGen() {
   random2 = Math.floor(Math.random() * 10);
   document.getElementById("num1").innerHTML = "How much is " + random1 + " times " + random2 + "?";
 
-  };
+}
 
 function checkAnswer() {
   var input1;
@@ -130,5 +132,5 @@ function checkAnswer() {
       document.forms["myform"].elements["result"].value = "No. Please try again.";
       document.getElementById("product1").value = "";
     }
-    
-  };
+
+}
