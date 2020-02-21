@@ -49,7 +49,7 @@ function buttonActive() {
   } else if (input1 < 0 || input2 < 0 || input3 < 0 || input4 < 0){
       document.getElementById('submitA').disabled = true;
   } else {
-    document.getElementById('submitA').disabled = true;
+    document.getElementById('submitA').disabled = false;
   }
 
 }
