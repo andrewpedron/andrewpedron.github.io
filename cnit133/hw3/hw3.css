@@ -18,3 +18,11 @@ input {
   width: 550px;
   margin: 0px auto;
 }
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
