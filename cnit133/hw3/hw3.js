@@ -38,10 +38,10 @@ function process() {
 function buttonActive() {
   var input1, input2, input3, input4;
 
-  input1 = document.getElementById("num1").value;
-  input2 = document.getElementById("num2").value;
-  input3 = document.getElementById("num3").value;
-  input4 = document.getElementById("num4").value;
+  input1 = parseInt(document.getElementById("num1").value);
+  input2 = parseInt(document.getElementById("num2").value);
+  input3 = parseInt(document.getElementById("num3").value);
+  input4 = parseInt(document.getElementById("num4").value);
 
 // Check to make sure each of the four items has an input and >= 0 before allowing user to submit
   if(Number.isNaN(input1) || Number.isNaN(input2) || Number.isNaN(input3) || Number.isNaN(input4)) {
