@@ -44,7 +44,7 @@ function buttonActive() {
   input4 = document.getElementById("num4").value;
 
 // Check to make sure each of the four items has an input and >= 0 before allowing user to submit
-  if(isNaN(input1) || isNaN(input2) || isNaN(input3) || isNaN(input4)) {
+  if(Number.isNaN(input1) || Number.isNaN(input2) || Number.isNaN(input3) || Number.isNaN(input4)) {
       document.getElementById('submitA').disabled = true;
   } else if (input1 < 0 || input2 < 0 || input3 < 0 || input4 < 0){
       document.getElementById('submitA').disabled = true;
