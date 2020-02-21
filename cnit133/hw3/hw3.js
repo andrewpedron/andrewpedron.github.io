@@ -47,7 +47,7 @@ function buttonActive() {
   input4 = document.getElementById("num4").value;
 
 // Check to make sure each of the four items has an input and >= 0 before allowing user to submit
-  if(input1 >= 0 && input1 != null && input2 >= 0 && input2 != null && input3 >= 0 && input3 != 0 && input4 >= 0 && input4 != 0) {
+  if(input1 >= 0 && input2 >= 0 && input3 >= 0 && input4 >= 0) {
       document.getElementById('submitA').disabled = false;
   } else {
       document.getElementById('submitA').disabled = true;
