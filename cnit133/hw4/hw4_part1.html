@@ -11,15 +11,17 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://andrewpedron.github.io/cnit133/hw4/hw4.js" defer></script>
+  <script src="/Users/andrewpedron/Documents/Javascript/cnit133/test.js" defer></script>
 </head>
 <!-- Head -->
 
 <!-- Body -->
 
-<body>
+<body onload='start()'>
 
 <!-- Navigation -->
 
@@ -58,14 +60,37 @@
         <div>
           <h2 class="font-weight-normal">Homework 4: Part #1</h2>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
         <div>
-          <h2 class="font-weight-normal">Homework 4: Part #1</h2>
+          <div class="p-3 mb-2 bg-info text-white">Part 1a:</div>
+          <div class="font-weight-normal">Product of every fourth integer from 5 to 21:</div>
+          <div class="text-info" id="everyFourthProd"></div>
+          <div class="font-weight-normal">Sum of every fourth integer from 5 to 21:</div>
+          <div class="text-info" id="everyFourthSum"></div>
+        </div>
+        <div>
+          <div class="p-3 mb-2 bg-info text-white">Part 1b:</div>
+          <div class="font-weight-normal">Product of every third integer from 3 to 21:</div>
+          <div class="text-info" id="everyThirdProd"></div>
+          <div class="font-weight-normal">Sum of every fourth integer from 3 to 21:</div>
+          <div class="text-info" id="everyThirdSum"></div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <div id="draggable">
+          <p class="#drag">Drag me around if you dare!</p>
         </div>
       </div>
     </div>
   </div>
-
-
 </body>
 
 <!-- Body -->
