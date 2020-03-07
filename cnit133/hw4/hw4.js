@@ -88,11 +88,14 @@ function compoundSeven() {
   document.getElementById('compound').appendChild(tbody);
 }
 
+// call part 1 functions on load
 function start() {
   everyFourth();
   everyThird();
 }
 
+
+// call part 2 functions on load
 function start2() {
   compoundFive();
   compoundSix();
