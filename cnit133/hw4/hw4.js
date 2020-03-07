@@ -91,9 +91,6 @@ function compoundSeven() {
 function start() {
   everyFourth();
   everyThird();
-  compoundFive();
-  compoundSix();
-  compoundSeven();
 }
 
 function start2() {
