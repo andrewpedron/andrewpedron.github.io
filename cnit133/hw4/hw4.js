@@ -96,6 +96,12 @@ function start() {
   compoundSeven();
 }
 
+function start2() {
+  compoundFive();
+  compoundSix();
+  compoundSeven();
+}
+
 
 $(document).ready(function(){
 
