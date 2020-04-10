@@ -2,10 +2,11 @@
 <html lang="en">
 
 <!-- Head -->
+
 <head>
-  <title>CNIT 133 Homework 5: Part #1</title>
+  <title>CNIT 133 Homework 4: Part #1</title>
   <meta charset="utf-8">
-  <meta name="description" content="CNIT 133 Homework 5: Part #1">
+  <meta name="description" content="CNIT 133 Homework 4: Part #1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -16,6 +17,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <script src="https://andrewpedron.github.io/cnit133/hw5/hw5.js" defer></script>
+
 </head>
 <!-- Head -->
 
@@ -23,18 +25,18 @@
 
 <body>
 
-<!-- Navigation -->
+  <!-- Navigation -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
     <div class="container">
       <a class="navbar-brand" href="https://andrewpedron.github.io/cnit133/index.html">Main Page</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw5/hw5.html">Assignment Homepage<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw4/hw4.html">Assignment Homepage<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,43 +55,73 @@
 
   <div class="container">
     <div class="row">
+      <br><br>
+    </div>
+    <div class="row">
+      <div class="col-sm-10">
+        <div>
+          <h2 class="font-weight-normal">Validation on Submit </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
       <br>
     </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div>
-          <h2 class="font-weight-normal">Homework 5: Part #2</h2>
+    <form class="needs-validation" name="myform" onsubmit="validate_checkboxes();" action="hw5_part1_processed.html" method="get" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <label for="inputValidation">Input</label>
+          <input type="text" class="form-control" id="validationCustom01" placeholder="Write something here." required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Please right something above.
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div>
-          <div class="p-3 mb-2 bg-info text-white">Part 1a:</div>
-          <div class="font-weight-normal">Product of every fourth integer from 5 to 21:</div>
-          <div class="text-info" id="everyFourthProd"></div>
-          <div class="font-weight-normal">Sum of every fourth integer from 5 to 21:</div>
-          <div class="text-info" id="everyFourthSum"></div>
-        </div>
-        <div>
-          <div class="p-3 mb-2 bg-info text-white">Part 1b:</div>
-          <div class="font-weight-normal">Product of every third integer from 3 to 21:</div>
-          <div class="text-info" id="everyThirdProd"></div>
-          <div class="font-weight-normal">Sum of every fourth integer from 3 to 21:</div>
-          <div class="text-info" id="everyThirdSum"></div>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <select class="custom-select" required>
+            <option value="">Select option</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <div class="invalid-feedback">Example invalid custom select feedback</div>
         </div>
       </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-sm-4">
-        <div id="draggable">
-          <p class="#drag">Drag me around if you dare!</p>
+      <div class="form-group">
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+          <label class="custom-control-label" for="customControlValidation2">Toggle here</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+          <label class="custom-control-label" for="customControlValidation3">Or toggle here</label>
+          <div class="invalid-feedback">Please toggle a radio button.</div>
         </div>
       </div>
-    </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="box1"  id="box1" required>
+          <label class="form-check-label" for="invalidCheck">
+            Checkbox 1
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="box2"  id="box2" required>
+          <label class="form-check-label" for="invalidCheck">
+            Checkbox 2
+          </label>
+          <div class="invalid-feedback">
+            Please check at least one checkbox.
+          </div>
+        </div>
+      </div>
+      <br>
+      <input class="btn btn-primary" type="submit" value="Submit Form"></input>
+    </form>
   </div>
 </body>
 
