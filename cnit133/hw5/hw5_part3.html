@@ -58,35 +58,25 @@
     <div class="row">
       <div class="col-sm-4">
         <div>
-          <h2 class="font-weight-normal">Homework 5: Part #3</h2>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4">
-        <div>
-          <div class="p-3 mb-2 bg-info text-white">Part 1a:</div>
-          <div class="font-weight-normal">Product of every fourth integer from 5 to 21:</div>
-          <div class="text-info" id="everyFourthProd"></div>
-          <div class="font-weight-normal">Sum of every fourth integer from 5 to 21:</div>
-          <div class="text-info" id="everyFourthSum"></div>
+          <h2 class="font-weight-normal">2018 Census</h2>
         </div>
         <div>
-          <div class="p-3 mb-2 bg-info text-white">Part 1b:</div>
-          <div class="font-weight-normal">Product of every third integer from 3 to 21:</div>
-          <div class="text-info" id="everyThirdProd"></div>
-          <div class="font-weight-normal">Sum of every fourth integer from 3 to 21:</div>
-          <div class="text-info" id="everyThirdSum"></div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="row">
-      <div class="col-sm-4">
-        <div id="draggable">
-          <p class="#drag">Drag me around if you dare!</p>
+          <form name="myform" action="/action_page.php" class="was-validated">
+              <div class="form-group">
+                <label for="num1">Enter The State You Want Data About:</label>
+                <input type="text" id="userData1" name="num1" min="0" max="100" class="form-control is-valid" placeholder="" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please input state name or abbreviation.</div>
+              </div>
+              <div class="form-group">
+                <label for="textFade">Result:</label>
+                <br>
+                <textarea id="textFade" rows="6" cols="40" name="result"></textarea>
+                <br><br>
+                <input type="button" class="btn btn-primary" onclick="process()" value="State Info">
+                <input type="reset" class="btn btn-danger" value="Reset">
+              </div>
+          </form>
         </div>
       </div>
     </div>
