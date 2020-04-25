@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+  <title>CNIT 133 Homework 5: Part #1</title>
+  <meta charset="utf-8">
+  <meta name="description" content="CNIT 133 Homework 5: Part #1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://andrewpedron.github.io/cnit133/hw5/hw5.js" defer></script>
+</head>
+<!-- Head -->
+
+<!-- Body -->
+
+<body>
+
+<!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container">
+      <a class="navbar-brand" href="https://andrewpedron.github.io/cnit133/index.html">Main Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw5/hw5.html">Assignment Homepage<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Parts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw5/hw5_part1.html">Part #1</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw5/hw5_part2.html">Part #2</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw5/hw5_part3.html">Part #3</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <br>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div>
+          <h2 class="font-weight-normal">2018 Census</h2>
+        </div>
+        <div>
+          <form name="myform" action="/action_page.php" class="was-validated">
+              <div class="form-group">
+                <label>Enter The State You Want Data About:</label>
+                <input type="text" id="userData1" name="num1" class="form-control is-valid" placeholder="" required>
+                <div class="valid-feedback"></div>
+                <div class="invalid-feedback">Please input state name or abbreviation.</div>
+              </div>
+              <div class="form-group">
+                <label for="textFade">Result:</label>
+                <br>
+                <textarea id="textFade" rows="6" cols="40" name="result"></textarea>
+                <br><br>
+                <input type="button" class="btn btn-primary" onclick="process()" value="State Info">
+                <input type="reset" class="btn btn-danger" value="Reset">
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<!-- Body -->
+
+</html>
