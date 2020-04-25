@@ -60,29 +60,30 @@
     <div class="row">
       <div class="col-sm-10">
         <div>
-          <h2 class="font-weight-normal">Validation on Submit </h2>
+          <h2 class="font-weight-normal">Math Methods </h2>
         </div>
       </div>
     </div>
     <div class="row">
-      <br>
-    </div>
-    <form class="needs-validation" name="myform" onsubmit="process();" novalidate>
-      <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <label>Input</label>
-          <input type="text" class="form-control" id="validationCustom01" placeholder="Write something here." required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
-          <div class="invalid-feedback">
-            Please right something above.
-          </div>
-        </div>
+      <div class="col-sm-6">
+        <form name="myform" action="/action_page.php" class="was-validated">
+            <div class="form-group">
+              <label>Enter a floating number with at least 4 decimal places:</label>
+              <input type="number" step="any" id="userData1" name="num1" class="form-control is-valid" placeholder="" required>
+              <div class="valid-feedback"></div>
+              <div class="invalid-feedback">Please make sure your input is a floating number with at least four decimal places.</div>
+            </div>
+            <div class="form-group">
+              <label for="textFade">Result:</label>
+              <br>
+              <textarea id="textFade" rows="6" cols="65" name="result"></textarea>
+              <br><br>
+              <input type="button" class="btn btn-primary" onclick="process()" value="Submit">
+              <input type="reset" class="btn btn-danger" value="Reset">
+            </div>
+        </form>
       </div>
-      <br>
-      <input class="btn btn-primary" type="submit" value="Submit Form">
-    </form>
+    </div>
   </div>
 </body>
 
