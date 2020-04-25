@@ -4,9 +4,9 @@
 <!-- Head -->
 
 <head>
-  <title>CNIT 133 Homework 4: Part #2</title>
+  <title>CNIT 133 Homework 6: Part #2</title>
   <meta charset="utf-8">
-  <meta name="description" content="CNIT 133 Homework 4: Part #2">
+  <meta name="description" content="CNIT 133 Homework 6: Part #2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://andrewpedron.github.io/cnit133/hw5/hw5.js" defer></script>
+  <script src="https://andrewpedron.github.io/cnit133/hw6/hw6.js" defer></script>
 
 </head>
 <!-- Head -->
@@ -36,16 +36,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw5/hw5.html">Assignment Homepage<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw6/hw6.html">Assignment Homepage<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Parts
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw5/hw5_part1.html">Part #1</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw5/hw5_part2.html">Part #2</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw5/hw5_part3.html">Part #3</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw6/hw6_part1.html">Part #1</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw6/hw6_part2.html">Part #2</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw6/hw6_part3.html">Part #3</a>
             </div>
           </li>
         </ul>
@@ -60,43 +60,36 @@
     <div class="row">
       <div class="col-sm-10">
         <div>
-          <h2 class="font-weight-normal">Navigate to Websites</h2>
+          <h2 class="font-weight-normal">String Methods </h2>
         </div>
       </div>
     </div>
     <div class="row">
-      <br>
+      <div class="col-sm-6">
+        <form name="myform" action="/action_page.php" class="was-validated">
+          <div class="form-group">
+            <label for="textFade">Enter any text in the text area below:</label>
+            <br>
+            <textarea rows="6" cols="65" id="input" name="input"></textarea>
+          </div>
+          <div class="form-group">
+            <label>Enter a character you want to search for:</label>
+            <input type="text" id="key" name="search" class="form-control is-valid" placeholder="" required>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback">Please input a character to search. If you enter multiple characters, we'll search the first one.</div>
+            <br>
+            <input type="button" class="btn btn-primary" onclick="process2()" value="Submit">
+            <input type="reset" class="btn btn-danger" value="Reset">
+          </div>
+          <div class="form-group">
+            <label for="textFade">Result:</label>
+            <br>
+            <textarea rows="6" cols="65" id="output" disabled></textarea>
+            <br><br>
+          </div>
+        </form>
+      </div>
     </div>
-    <form>
-      <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <label>Select option to navigate:</label>
-          <select class="custom-select" name="destList" onchange="goToNewPage(this.form);">
-            <option value="">Select option</option>
-            <option value="https://www.reddit.com/">Reddit</option>
-            <option value="https://slickdeals.net/">Slickdeals</option>
-            <option value="https://www.tradingview.com/">TradingView</option>
-            <option value="https://www.coinbase.com/">Coinbase</option>
-          </select>
-          <div class="invalid-feedback">Example invalid custom select feedback</div>
-        </div>
-      </div>
-      <br>
-    </form>
-    <form>
-      <div class="form-row">
-        <div class="col-md-4 mb-3">
-          <label>Press submit to navigate:</label>
-          <select class="custom-select" name="destList">
-            <option value="https://www.reddit.com/">Reddit</option>
-            <option value="https://slickdeals.net/">Slickdeals</option>
-            <option value="https://www.tradingview.com/">TradingView</option>
-            <option value="https://www.coinbase.com/">Coinbase</option>
-          </select>
-        </div>
-      </div>
-      <input type="button" class="btn btn-primary" value="Submit" onclick="goToNewPage(this.form);">
-    </form>
   </div>
 </body>
 

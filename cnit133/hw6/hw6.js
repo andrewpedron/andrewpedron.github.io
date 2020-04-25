@@ -16,6 +16,28 @@ function process() {
       }
 }
 
+function process2() {
+  var count = 0;
+
+  var key = document.getElementById("key").value.toLowerCase().charAt(0);
+  var key = key.toLowerCase();
+
+  var stringToSearch = document.getElementById("input").value;
+  var stringToSearch = stringToSearch.toLowerCase();
+
+
+  for (i = 0; i < stringToSearch.length; i++) {
+
+    if (stringToSearch.charAt(i) == key)
+      count++;
+  }
+
+  if (count == 0){
+    document.getElementById("output").value = key + " not found.";
+  } else {
+    document.getElementById("output").value = count + " occurrence(s) of " + key + " found.";
+  }
+}
 
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
