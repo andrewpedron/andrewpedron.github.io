@@ -59,7 +59,7 @@ body {
 #button {
     height: 32px;
     width: 184px;
-    margin: auto;
+    margin: initial;
 }
 
 ul, li {
