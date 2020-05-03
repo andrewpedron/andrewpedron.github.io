@@ -4,9 +4,9 @@
 <!-- Head -->
 
 <head>
-  <title>CNIT 133 Homework 6: Part #2</title>
+  <title>CNIT 133 Homework 7: Part #2</title>
   <meta charset="utf-8">
-  <meta name="description" content="CNIT 133 Homework 6: Part #2">
+  <meta name="description" content="CNIT 133 Homework 7: Part #2">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="https://andrewpedron.github.io/cnit133/hw6/hw6.js" defer></script>
+  <script src="https://andrewpedron.github.io/cnit133/hw7/hw7.js" defer></script>
 
 </head>
 <!-- Head -->
@@ -36,16 +36,15 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw6/hw6.html">Assignment Homepage<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw7/hw7.html">Assignment Homepage<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Parts
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw6/hw6_part1.html">Part #1</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw6/hw6_part2.html">Part #2</a>
-              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw6/hw6_part3.html">Part #3</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw7/hw7_part1.html">Part #1</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw7/hw7_part2.html">Part #2</a>
             </div>
           </li>
         </ul>
@@ -60,35 +59,66 @@
     <div class="row">
       <div class="col-sm-10">
         <div>
-          <h2 class="font-weight-normal">String Methods </h2>
+          <h2 class="font-weight-normal">jQuery Navigation </h2>
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm-6">
-        <form name="myform" action="/action_page.php" class="was-validated">
-          <div class="form-group">
-            <label>Enter any text in the text area below:</label>
-            <br>
-            <textarea rows="6" cols="65" id="input" name="input"></textarea>
-          </div>
-          <div class="form-group">
-            <label>Enter a character you want to search for:</label>
-            <input type="text" id="key" name="search" class="form-control is-valid" placeholder="" required>
-            <div class="valid-feedback"></div>
-            <div class="invalid-feedback">Please input a character to search. If you enter multiple characters, we'll search the first one.</div>
-            <br>
-            <input type="button" class="btn btn-primary" onclick="process2()" value="Submit">
-            <input type="reset" class="btn btn-danger" value="Reset">
-          </div>
-          <div class="form-group">
-            <label>Result:</label>
-            <br>
-            <textarea rows="6" cols="65" id="output" disabled></textarea>
-            <br><br>
-          </div>
-        </form>
-      </div>
+      <br>
+    </div>
+    <div id="button">
+      <ul class="hover">
+        <li class="hoverli">
+          <img src="http://www.fordesigner.com/imguploads/Image/cjbc/zcool/png20080526/1211776981.png" width="184" height="32" class="menu_class" />
+          <ul class="file_menu">
+            <li><a href="https://andrewpedron.github.io/cnit133/index.html">Homework #1</a></li>
+            <li><a href="https://andrewpedron.github.io/cnit133/hw2/hw2.html">Homework #2</a>
+              <ul class="sub">
+                <li><a href="https://andrewpedron.github.io/cnit133/hw2/hw2_part1.html">Part #1</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw2/hw2_part2.html">Part #2</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw2/hw2_part3.html">Part #3</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw2/hw2_extra_credit.html">Extra Credit</a></li>
+              </ul>
+            </li>
+            <li><a href="https://andrewpedron.github.io/cnit133/hw3/hw3.html">Homework #3</a>
+              <ul class="sub">
+                <li><a href="https://andrewpedron.github.io/cnit133/hw3/hw3_part1.html">Part #1</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw3/hw3_part2.html">Part #2</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw3/hw3_part3.html">Part #3</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw3/hw3_part4.html">Extra Credit</a></li>
+              </ul>
+            </li>
+            <li><a href="https://andrewpedron.github.io/cnit133/hw4/hw4.html">Homework #4</a>
+              <ul class="sub">
+                <li><a href="https://andrewpedron.github.io/cnit133/hw4/hw4_part1.html">Part #1</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw4/hw4_part2.html">Part #2</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw4/hw4_extra_credit.html">Extra Credit</a></li>
+              </ul>
+            </li>
+            <li><a href="https://andrewpedron.github.io/cnit133/hw5/hw5.html">Homework #5</a>
+              <ul class="sub">
+                <li><a href="https://andrewpedron.github.io/cnit133/hw5/hw5_part1.html">Part #1</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw5/hw5_part2.html">Part #2</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw5/hw5_part3.html">Part #3</a></li>
+              </ul>
+            </li>
+            <li><a href="https://andrewpedron.github.io/cnit133/hw6/hw6.html">Homework #6</a>
+              <ul class="sub">
+                <li><a href="https://andrewpedron.github.io/cnit133/hw6/hw6_part1.html">Part #1</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw6/hw6_part2.html">Part #2</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw6/hw6_part3.html">Part #3</a></li>
+              </ul>
+            </li>
+            <li><a href="https://andrewpedron.github.io/cnit133/hw7/hw7.html">Homework #7</a>
+              <ul class="sub">
+                <li><a href="https://andrewpedron.github.io/cnit133/hw7/hw7_part1.html">Part #1</a></li>
+                <li><a href="https://andrewpedron.github.io/cnit133/hw7/hw7_part2.html">Part #2</a></li>
+              </ul>
+            </li>
+            <li><a href="https://andrewpedron.github.io/cnit133/hw8/hw8.html">Homework #8</a></li>
+          </ul>
+        <li>
+      </ul>
     </div>
   </div>
 </body>
