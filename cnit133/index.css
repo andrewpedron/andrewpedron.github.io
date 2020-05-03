@@ -75,12 +75,12 @@ ul, li {
 .file_menu {
     display:none;
     width:300px;
-    border: 1px solid #fff;
+    border: 1px solid #F0F0F0;
     position: relative;
 }
 
 .file_menu li {
-    background-color: #fff;
+    background-color: #F0F0F0;
     position: relative;
 }
 
@@ -100,7 +100,7 @@ ul, li {
 .sub {
     position: absolute;
     width:300px;
-    border: 1px solid #fff;
+    border: 1px solid #F0F0F0;
     display: none;
     left: 302px;
     top: 0px;
