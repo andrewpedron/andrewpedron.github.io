@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+
+<head>
+  <title>CNIT 133 Homework 7: Part #1</title>
+  <meta charset="utf-8">
+  <meta name="description" content="CNIT 133 Homework 7: Part #1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://andrewpedron.github.io/cnit133/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://andrewpedron.github.io/cnit133/hw7/hw7.js" defer></script>
+
+</head>
+<!-- Head -->
+
+<!-- Body -->
+
+<body>
+
+  <!-- Navigation -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container">
+      <a class="navbar-brand" href="https://andrewpedron.github.io/cnit133/index.html">Main Page</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="https://andrewpedron.github.io/cnit133/hw7/hw7.html">Assignment Homepage<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Parts
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw7/hw7_part1.html">Part #1</a>
+              <a class="dropdown-item" href="https://andrewpedron.github.io/cnit133/hw7/hw7_part2.html">Part #2</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <br><br>
+    </div>
+    <div class="row">
+      <div class="col-sm-10">
+        <div>
+          <h2 class="font-weight-normal">Customize This Page! </h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <br>
+    </div>
+    <form class="needs-validation" name="myform" novalidate>
+      <div class="form-row">
+        <div class="col-md-4 mb-3">
+          <div>
+            <label>Change Webpage Background To:</label>
+            <br>
+            <button class="btn btn-primary" type="button" onclick="changeBodyBg('yellow');">Yellow</button>
+            <button class="btn btn-primary" type="button" onclick="changeBodyBg('Lime');">Lime</button>
+            <button class="btn btn-primary" type="button" onclick="changeBodyBg('Orange');">Orange</button>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" onclick="changeFontSz('xx-small');" id="customControlValidation1" name="radio-stacked">
+          <label class="custom-control-label" for="customControlValidation1">Font Size Small</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" class="custom-control-input" onclick="changeFontSz('xx-large');" id="customControlValidation2" name="radio-stacked">
+          <label class="custom-control-label" for="customControlValidation2">Font Size Large</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-md-4 mb-3">
+          <select id="selectBox" class="custom-select" onchange="changeFontFamily();">
+            <option value="sans-serif">Select font style</option>
+            <option value="times">Times</option>
+            <option value="helvetica">Helvetica</option>
+          </select>
+        </div>
+      </div>
+      <br>
+    </form>
+  </div>
+</body>
+
+<!-- Body -->
+
+</html>
